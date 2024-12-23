@@ -1,6 +1,9 @@
 # FrontAngularApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
+The code shared here is purely an exercise to test features from Angular from 12 to 19.
+This is a work in progress.
+
+This project was initially generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.3.
 
 ## Development server
 
