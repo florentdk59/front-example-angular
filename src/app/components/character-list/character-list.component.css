@@ -39,3 +39,7 @@ span {
   font-size: 0.8rem;
   font-weight: normal;
 }
+
+div.character-list {
+  width: 250px;
+}

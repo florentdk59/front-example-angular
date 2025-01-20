@@ -1,9 +1,8 @@
 import { Component, Input, signal, computed, inject } from '@angular/core';
-import { DUMMY_USERS } from './dummy-users'
 import { HttpClient } from '@angular/common/http';
 
 const API_CHARACTERS = 'http://localhost:8080/api/characters';
-interface UserInfo {
+interface CharacterInfo {
   id: string;
   avatar: string;
   name: string;
@@ -15,13 +14,13 @@ interface Character {
 }
 
 @Component({
-  selector: 'app-user-list',
+  selector: 'app-character-list',
   standalone: false,
-  templateUrl: './user-list.component.html',
-  styleUrl: './user-list.component.css'
+  templateUrl: './character-list.component.html',
+  styleUrl: './character-list.component.css'
 })
-export class UserListComponent {
-  userList = signal<UserInfo[]>([]);
+export class CharacterListComponent {
+  characterList = signal<CharacterInfo[]>([]);
 
   private httpClient = inject(HttpClient);
 
@@ -30,19 +29,20 @@ export class UserListComponent {
     this.httpClient.get<Character[]>(API_CHARACTERS)
     .subscribe({
       next: (characters) => {
-        var userArray = new Array<UserInfo>();
+        var characterArray = new Array<CharacterInfo>();
         for(let character of characters) {
-          userArray.push({
+          characterArray.push({
             id: character.id,
             avatar: character.urlPicture,
             name: character.name
           });
         }
-        this.userList.set(userArray);
+        this.characterList.set(characterArray);
       }
     });
   }
-  onSelectUser(id: string) {
-    alert("user-list : selected id = " + id);
+
+  onSelectCharacter(id: string) {
+    alert("character-list : selected id = " + id);
   }
 }
