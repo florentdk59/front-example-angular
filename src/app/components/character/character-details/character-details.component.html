@@ -1,0 +1,14 @@
+  <div class="character-details">
+    <h3>Details</h3>
+
+    @if (character()) {
+      <ul>
+        <li>ID : {{ character()!.id }}</li>
+        <li>NAME : {{ character()!.name }}</li>
+      </ul>
+    }
+    @else {
+      <span>Please select a character...</span>
+    }
+
+  </div>

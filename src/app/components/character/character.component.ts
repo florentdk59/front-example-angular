@@ -2,7 +2,6 @@ import { Component, computed, EventEmitter, input, output} from '@angular/core';
 
 @Component({
   selector: 'app-character',
-  standalone: false,
   templateUrl: './character.component.html',
   styleUrl: './character.component.css'
 })
@@ -11,14 +10,15 @@ export class CharacterComponent {
   name = input<string>("unknown");
   avatar = input.required<string>();
 
-  myselect = output<string>();
-  //@Output() myselect = new EventEmitter();
+  eventCharacterSelected = output<string>();
+  //@Output() eventCharacterSelected = new EventEmitter();
 
-  selectedCharacterImagePath = computed(() => this.avatar());
-  selectedCharacterName = computed(() => this.name());
+  characterImagePath = computed(() => this.avatar());
+  characterName = computed(() => this.name());
+  characterDetails = computed(() => this.characterImagePath());
 
   actionSelectCharacter() {
-    this.myselect.emit(this.id());
+    this.eventCharacterSelected.emit(this.id());
   }
 
 }

@@ -41,5 +41,17 @@ span {
 }
 
 div.character-list {
+  float: left;
   width: 250px;
+}
+
+
+app-character-details {
+  float: left;
+  margin-left: 20px;
+}
+
+.loading-content {
+  box-shadow: none;
+  margin: 10px 50px 10px 50px;
 }

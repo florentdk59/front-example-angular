@@ -1,8 +1,0 @@
-<div class="character-list">
-  @for (character of characterList(); track character.id) {
-    <app-character [id]="character.id"
-      [name]="character.name"
-      [avatar]="character.avatar"
-      (myselect)="onSelectCharacter($event)" />
-  }
-</div>

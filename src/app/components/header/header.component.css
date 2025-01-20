@@ -1,3 +1,8 @@
+header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
 h1 {
   color: green;
 }

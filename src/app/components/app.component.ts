@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { CharacterListComponent } from './character-list/character-list.component';
+import { HeaderComponent } from 'components/header/header.component';
 
 @Component({
   selector: 'app-root',
-  standalone: false,
-  //imports: [RouterOutlet, HeaderComponent, CharacterListComponent],
+  imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'front-angular-app';
+  title = 'front-example-angular';
 }

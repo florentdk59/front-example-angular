@@ -1,4 +1,12 @@
 
 <header>
-  <h1>front-example-angular</h1>
+  <h1>front-example-angular MENU</h1>
+
+  <div class="header">
+    @for (routeElement of routeElements; track routeElement.path) {
+      <div class="nav-item">
+        <a [routerLink]="routeElement.path">{{ routeElement.name }} </a>
+      </div>
+    }
+  </div>
 </header>
