@@ -1,8 +1,14 @@
-import { Component, computed, EventEmitter, input, output} from '@angular/core';
+import { Component, computed, input, output} from '@angular/core';
+import {RoundedDivComponent} from '../rounded-div/rounded-div.component';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-character',
   templateUrl: './character.component.html',
+  imports: [
+    RoundedDivComponent,
+    NgOptimizedImage
+  ],
   styleUrl: './character.component.css'
 })
 export class CharacterComponent {
@@ -15,7 +21,6 @@ export class CharacterComponent {
 
   characterImagePath = computed(() => this.avatar());
   characterName = computed(() => this.name());
-  characterDetails = computed(() => this.characterImagePath());
 
   actionSelectCharacter() {
     this.eventCharacterSelected.emit(this.id());

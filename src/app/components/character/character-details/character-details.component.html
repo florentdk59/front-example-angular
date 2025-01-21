@@ -1,14 +1,15 @@
-  <div class="character-details">
-    <h3>Details</h3>
+<rounded-div >
+    <div class="character-details">
+      <h3>Details</h3>
 
-    @if (character()) {
-      <ul>
-        <li>ID : {{ character()!.id }}</li>
-        <li>NAME : {{ character()!.name }}</li>
-      </ul>
-    }
-    @else {
-      <span>Please select a character...</span>
-    }
-
-  </div>
+      @if (character()) {
+        <ul>
+          <li>ID : {{ character()!.id }}</li>
+          <li>NAME : {{ character()!.name }}</li>
+        </ul>
+      }
+      @else {
+        <span>Please select a character...</span>
+      }
+    </div>
+</rounded-div>

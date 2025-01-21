@@ -1,9 +1,8 @@
-
 div.character-details {
   width: 350px;
   height: 600px;
   border: 2px solid black;
-  padding: 0px 5px 5px 10px;
+  padding: 0 5px 5px 10px;
 
   color: #c3b3d1;
   background-color: #433352;

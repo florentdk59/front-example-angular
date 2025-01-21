@@ -1,6 +1,6 @@
-<div>
+<rounded-div>
   <button (click)="actionSelectCharacter()">
-    <img [src]="characterImagePath()"/>
+    <img [alt]="characterName()" [ngSrc]="characterImagePath()" width="20" height="20" />
     <span>{{ characterName() }}</span>
   </button>
-</div>
+</rounded-div>

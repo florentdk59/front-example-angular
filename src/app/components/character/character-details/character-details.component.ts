@@ -1,9 +1,12 @@
 import { Component, input } from '@angular/core';
 import { CharacterInfo } from 'components/character/character-info.model';
+import {RoundedDivComponent} from "../../rounded-div/rounded-div.component";
 
 @Component({
   selector: 'app-character-details',
-  imports: [],
+    imports: [
+        RoundedDivComponent
+    ],
   templateUrl: './character-details.component.html',
   styleUrl: './character-details.component.css'
 })
