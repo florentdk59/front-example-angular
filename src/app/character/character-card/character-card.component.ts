@@ -4,14 +4,14 @@ import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-character',
-  templateUrl: './character.component.html',
+  templateUrl: './character-card.component.html',
   imports: [
     RoundedDivComponent,
     NgOptimizedImage
   ],
-  styleUrl: './character.component.css'
+  styleUrl: './character-card.component.css'
 })
-export class CharacterComponent {
+export class CharacterCardComponent {
   id = input.required<string>();
   name = input<string>("unknown");
   avatar = input.required<string>();
