@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { CharacterInfo } from 'components/character/character-info.model';
+import { CharacterInfo } from 'character/character-info.model';
 import {RoundedDivComponent} from "../../rounded-div/rounded-div.component";
 
 @Component({

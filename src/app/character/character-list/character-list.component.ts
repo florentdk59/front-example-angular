@@ -2,9 +2,9 @@ import { Component, signal, inject, computed } from '@angular/core';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { HttpClient } from '@angular/common/http';
-import { CharacterComponent } from "components/character/character.component";
-import { CharacterDetailsComponent } from "components/character/character-details/character-details.component";
-import { CharacterInfo } from 'components/character/character-info.model';
+import { CharacterComponent } from "character/character.component";
+import { CharacterDetailsComponent } from "character/character-details/character-details.component";
+import { CharacterInfo } from 'character/character-info.model';
 
 const API_CHARACTERS = 'http://localhost:8080/api/characters';
 

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { CharacterListComponent } from 'components/character/character-list/character-list.component';
-import { HomepageComponent } from 'components/homepage/homepage.component';
+import { CharacterListComponent } from 'character/character-list/character-list.component';
+import { HomepageComponent } from 'homepage/homepage.component';
 
 export const routes: Routes = [
 
