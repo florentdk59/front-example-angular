@@ -1,5 +1,5 @@
 import { Component, computed, input, output} from '@angular/core';
-import {RoundedDivComponent} from '../rounded-div/rounded-div.component';
+import {RoundedDivComponent} from 'commons/rounded-div/rounded-div.component';
 import {NgOptimizedImage} from '@angular/common';
 
 @Component({

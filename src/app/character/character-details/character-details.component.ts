@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
-import { CharacterInfo } from 'character/character-info.model';
-import {RoundedDivComponent} from "../../rounded-div/rounded-div.component";
+import { CharacterInfo } from 'character/character.model';
+import {RoundedDivComponent} from "commons/rounded-div/rounded-div.component";
 
 @Component({
   selector: 'app-character-details',

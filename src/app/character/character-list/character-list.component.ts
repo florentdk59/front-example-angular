@@ -4,7 +4,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { HttpClient } from '@angular/common/http';
 import { CharacterComponent } from "character/character.component";
 import { CharacterDetailsComponent } from "character/character-details/character-details.component";
-import { CharacterInfo } from 'character/character-info.model';
+import { CharacterInfo } from 'character/character.model';
 
 const API_CHARACTERS = 'http://localhost:8080/api/characters';
 
