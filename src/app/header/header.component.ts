@@ -1,5 +1,5 @@
-import { Component, signal, inject, computed } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 interface Route {
   path: string,
