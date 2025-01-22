@@ -1,9 +1,9 @@
 
 <header>
-  <h1>front-example-angular MENU</h1>
-  <h3>
-    <ng-content select="message" />
-  </h3>
+  <h1 appCustomH1Title>
+    front-example-angular MENU
+    <span>secondary subtitle with content projection</span>
+  </h1>
 
   <div class="header">
     @for (routeElement of routeElements; track routeElement.path) {

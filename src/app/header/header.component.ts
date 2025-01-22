@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import { RouterLink } from '@angular/router';
+import {CustomH1TitleComponent} from '../custom-h1-title/custom-h1-title.component';
 
 interface Route {
   path: string,
@@ -10,7 +11,7 @@ interface Route {
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
-  imports: [RouterLink]
+  imports: [RouterLink, CustomH1TitleComponent]
 })
 export class HeaderComponent {
 
